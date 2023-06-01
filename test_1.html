@@ -1,0 +1,86 @@
+<button onclick="ei('e')";><strong>E</strong></button>
+<button onclick="ei('i')";><strong>I</strong></button>
+
+<br>
+<br>
+
+<button onclick="ns('n')";><strong>N</strong></button>
+<button onclick="ns('s')";><strong>S</strong></button>
+
+<br>
+<br>
+
+<button onclick="ft('f')";><strong>F</strong></button>
+<button onclick="ft('t')";><strong>T</strong></button>
+
+<br>
+<br>
+
+<button onclick="pj('p')";><strong>P</strong></button>
+<button onclick="pj('j')";><strong>J</strong></button>
+
+<br>
+<br>
+
+<button onclick="문이('이과')";><strong>이과</strong></button>
+<button onclick="문이('문과')";><strong>문과</strong></button>
+
+
+<script>
+
+    function ei(result){
+      if(result==='e'){
+        window.localStorage.setItem('ei', 'e');
+        //location.href="test_2.html";
+      }
+      else if(result==='i'){
+        window.localStorage.setItem('ei', 'i');
+        //location.href="test_2.html";
+      }
+    }
+
+    function ns(result){
+      if(result==='n'){
+        window.localStorage.setItem('ns', 'n');
+        //location.href="test_2.html";
+      }
+      else if(result==='s'){
+        window.localStorage.setItem('ns', 's');
+        //location.href="test_2.html";
+      }
+    }
+
+    function ft(result){
+      if(result==='f'){
+        window.localStorage.setItem('ft', 'f');
+        //location.href="test_2.html";
+      }
+      else if(result==='t'){
+        window.localStorage.setItem('ft', 't');
+        //location.href="test_2.html";
+      }
+    }
+
+    function pj(result){
+      if(result==='p'){
+        window.localStorage.setItem('pj', 'p');
+        //location.href="test_2.html";
+      }
+      else if(result==='j'){
+        window.localStorage.setItem('pj', 'j');
+        //location.href="test_2.html";
+      }
+    }
+
+    function 이문(result){
+      if(result==='이과'){
+        window.localStorage.setItem('문이', '이과');
+        location.href="test_2.html";
+      }
+      else if(result==='문과'){
+        window.localStorage.setItem('문이', '문과');
+        location.href="test_2.html";
+      }
+    }
+
+</script>

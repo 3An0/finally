@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>e/i</title>
+
+    <style>
+      h1{
+        font-size: 80px;
+      }
+
+      h2{
+        font-size : 40px;
+      }
+
+      @font-face {
+        font-family: 'SF_HambakSnow';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      .my_btn{
+        border-radius: 60px;
+        font-size : 30px;
+      }
+
+      body {
+        font-family: 'SF_HambakSnow';
+       }
+      button{
+        font-family: 'SF_HambakSnow';
+        background-color : #4B89DC;
+      }
+
+      .border{
+        border-style : solid;
+        border-width : 1px;
+      }
+
+      spen{
+        color : white;
+        background : blue;
+        border : 3px solid blue;
+        font-size : 50px;
+      }
+
+      img{
+        border : 15px solid #0067A3;
+        border-radius : 2em;
+      }
+    </style>
+  </head>
+
+  <body bgcolor="B8DFF8">
+    <center>
+
+    <h2>눈을 떴더니 대학생이 되었다</h2>
+    <h1>여..여긴 어디지...?</h1>
+    <img src="ei.jpg" width=600px;>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <p style="margin-top:50px;">
+    <button class='my_btn' style="padding:30px; margin:10px;" onclick="ei('e')";>주변에 있는 아무 사람을 잡고 무슨 상황인지 물어본다</button>
+    <br>
+    <button class='my_btn' style="padding:30px; margin:10px;" onclick="ei('i')";>구석에 숨어 조용히 상황을 파악해 본다</button>
+    </p>
+
+    <br>
+    <br>
+    <p><spen>1<spen></p>
+    </center>
+
+  </body>
+
+<script>
+    function ei(result){
+      if(result==='e'){
+        window.localStorage.setItem('ei', 'e');
+        location.href="3.html";
+    }
+    else if(result==='i'){
+      window.localStorage.setItem('ei', 'i');
+        location.href="3.html";
+    }
+  }
+</script>
+
+
+</html>

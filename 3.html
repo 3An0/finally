@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>n/s</title>
+
+    <style>
+      h1{
+        font-size: 60px;
+      }
+
+      h2{
+        font-size : 40px;
+      }
+
+      @font-face {
+        font-family: 'SF_HambakSnow';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      .my_btn{
+        border-radius: 60px;
+        font-size : 25px;
+      }
+
+      body {
+        font-family: 'SF_HambakSnow';
+       }
+      button{
+        font-family: 'SF_HambakSnow';
+        background-color : #4B89DC;
+      }
+
+      .border{
+        border-style : solid;
+        border-width : 1px;
+      }
+
+      spen{
+        color : white;
+        background : blue;
+        border : 3px solid blue;
+        font-size : 50px;
+      }
+
+      img{
+        border : 15px solid #0067A3;
+        border-radius : 2em;
+      }
+    </style>
+  </head>
+
+  <body bgcolor="B8DFF8">
+    <center>
+
+    <h2>알고 봤더니 MT의 꽃! 술파티 중이었다</h2>
+    <h1>그런데 어떤 미남/미녀의 선배가 <br>나에게 다가오는데...</h1>
+    <img src="ns.jpg" width=500px;>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <p style="margin-top:50px;">
+    <button class='my_btn' style="padding:30px; margin:10px;" onclick="ns('n')";>온갖 상상을 펼치며 선배가 나에게 말을 걸길 기다린다</button>
+    <br>
+    <button class='my_btn' style="padding:30px; margin:10px;" onclick="ns('s')";>선배가 온다..! 바짝 긴장하며 경계한다</button>
+    </p>
+
+    <br>
+    <br>
+    <p><spen>2<spen></p>
+    </center>
+
+  </body>
+
+  <script>
+
+  function ns(result){
+        if(result==='n'){
+          window.localStorage.setItem('ns', 'n');
+          location.href="4.html";
+        }
+        else if(result==='s'){
+          window.localStorage.setItem('ns', 's');
+          location.href="4.html";
+        }
+      }
+
+  </script>
+
+</html>

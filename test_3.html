@@ -1,0 +1,76 @@
+<script>
+
+  var data = [0,0,0,0,0];
+
+  data[0] = window.localStorage.getItem('ei');
+  data[1] = window.localStorage.getItem('ns');
+  data[2] = window.localStorage.getItem('ft');
+  data[3] = window.localStorage.getItem('pj');
+  data[4] = window.localStorage.getItem('문이');
+
+
+  console.log(data[0],data[1],data[2],data[3],data[4]);
+
+  if(data[4]==='이과'){
+    if(data[0]==='i' && data[1] ==='s' && data[2] ==='f' && data[3]==='j') location.href="result_1.html";        //ISFJ      간호학과 : result_1.html
+    else if(data[0]==='e' && data[1] ==='s' && data[2] ==='t' && data[3]==='p') location.href="result_1.html";   //ESTP
+    else if(data[0]==='e' && data[1] ==='n' && data[2] ==='f' && data[3]==='p') location.href="result_1.html";   //ENFP
+    else if(data[0]==='e' && data[1] ==='s' && data[2] ==='f' && data[3]==='j') location.href="result_1.html";   //ESFJ
+    else if(data[0]==='e' && data[1] ==='s' && data[2] ==='f' && data[3]==='p') location.href="result_1.html";   //ESFP
+
+    else if(data[0]==='i' && data[1] ==='s' && data[2] ==='t' && data[3]==='j') location.href="result_8.html";   //ISTJ      의예과 : result_8.html
+    else if(data[0]==='i' && data[1] ==='n' && data[2] ==='f' && data[3]==='p') location.href="result_8.html";   //INFP
+    else if(data[0]==='e' && data[1] ==='n' && data[2] ==='t' && data[3]==='p') location.href="result_8.html";   //ENTP
+
+    else if(data[0]==='i' && data[1] ==='n' && data[2] ==='t' && data[3]==='j') location.href="result_5.html";   //INTJ      컴퓨터공학과 : result_5.html
+    else if(data[0]==='i' && data[1] ==='n' && data[2] ==='t' && data[3]==='p') location.href="result_5.html";   //INTP
+
+    else if(data[0]==='i' && data[1] ==='s' && data[2] ==='t' && data[3]==='p') location.href="result_2.html";   //ISTP      회계학과 : result_2.html
+    else if(data[0]==='e' && data[1] ==='s' && data[2] ==='t' && data[3]==='j') location.href="result_2.html";   //ESTJ
+    else if(data[0]==='e' && data[1] ==='n' && data[2] ==='f' && data[3]==='j') location.href="result_2.html";   //ENFJ
+    else if(data[0]==='e' && data[1] ==='n' && data[2] ==='t' && data[3]==='j') location.href="result_2.html";   //ENTJ
+
+    else if(data[0]==='i' && data[1] ==='n' && data[2] ==='f' && data[3]==='j') location.href="result_4.html";   //INFJ      예체능 : result_4.html
+    else if(data[0]==='i' && data[1] ==='s' && data[2] ==='f' && data[3]==='p') location.href="result_4.html";   //ISFP
+
+  }
+
+  else if(data[4]==='문과'){
+    if(data[0]==='i' && data[1] ==='s' && data[2] ==='t' && data[3]==='j') location.href="result_6.html";        //ISTJ      경제학과 : result_6.html
+    else if(data[0]==='e' && data[1] ==='s' && data[2] ==='t' && data[3]==='p') location.href="result_6.html";   //ESTP
+    else if(data[0]==='e' && data[1] ==='s' && data[2] ==='t' && data[3]==='j') location.href="result_6.html";   //ESTJ
+
+    else if(data[0]==='i' && data[1] ==='n' && data[2] ==='f' && data[3]==='j') location.href="result_7.html";   //INFJ      사회학과 : result_7.html
+    else if(data[0]==='i' && data[1] ==='n' && data[2] ==='t' && data[3]==='j') location.href="result_7.html";   //INTJ
+    else if(data[0]==='e' && data[1] ==='n' && data[2] ==='t' && data[3]==='p') location.href="result_7.html";   //ENTP
+    else if(data[0]==='e' && data[1] ==='n' && data[2] ==='t' && data[3]==='j') location.href="result_7.html";   //ENTJ
+
+    else if(data[0]==='i' && data[1] ==='s' && data[2] ==='f' && data[3]==='j') location.href="result_3.html";   //ISFJ      유아교육과 : result_3.html
+    else if(data[0]==='e' && data[1] ==='s' && data[2] ==='f' && data[3]==='j') location.href="result_3.html";   //ESFJ
+    else if(data[0]==='e' && data[1] ==='n' && data[2] ==='f' && data[3]==='j') location.href="result_3.html";   //ENFJ
+    else if(data[0]==='e' && data[1] ==='s' && data[2] ==='f' && data[3]==='p') location.href="result_3.html";   //ESFP
+
+    else if(data[0]==='i' && data[1] ==='n' && data[2] ==='f' && data[3]==='p') location.href="result_9.html";   //INFP      국어 국문학과 : result_9.html
+    else if(data[0]==='i' && data[1] ==='n' && data[2] ==='t' && data[3]==='p') location.href="result_9.html";   //INTP
+    else if(data[0]==='e' && data[1] ==='n' && data[2] ==='f' && data[3]==='p') location.href="result_9.html";   //ENFP
+
+    else if(data[0]==='i' && data[1] ==='s' && data[2] ==='t' && data[3]==='p') location.href="result_4.html";   //ISTP      예체능 : result_4.html
+    else if(data[0]==='i' && data[1] ==='s' && data[2] ==='f' && data[3]==='p') location.href="result_4.html";   //ISFP
+
+
+  }
+
+/*이과:   -간호학과 (ISFJ, ESTP, ENFP, ESFJ, ESFP)
+          -의예과 (ISTJ, INFP, ENTP)
+          -컴퓨터공학과 (INTJ, INTP)
+          -회계학과 (ISTP, ESTJ, ENFJ, ENTJ)
+
+  문과:   -경제학과(ISTJ, ESTP, ESTJ)
+          -사회학과(INFJ, INTJ, ENTP, ENTJ)
+          -유아교육과(ISFJ, ESFJ, ENFJ, ESFP)
+          -국어 국문학과(INFP, INTP, ENFP)
+
+  예체능: INFJ(이과) / ISTP(문과) / ISFP(문/이) */
+
+
+</script>

@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>f/t</title>
+
+    <style>
+      h1{
+        font-size: 60px;
+      }
+
+      h2{
+        font-size : 40px;
+      }
+
+      @font-face {
+        font-family: 'SF_HambakSnow';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      .my_btn{
+        border-radius: 60px;
+        font-size : 25px;
+      }
+
+      body {
+        font-family: 'SF_HambakSnow';
+       }
+      button{
+        font-family: 'SF_HambakSnow';
+        background-color : #4B89DC;
+      }
+
+      .border{
+        border-style : solid;
+        border-width : 1px;
+      }
+
+      spen{
+        color : white;
+        background : blue;
+        border : 3px solid blue;
+        font-size : 50px;
+      }
+
+      img{
+        border : 15px solid #0067A3;
+        border-radius : 2em;
+      }
+    </style>
+  </head>
+
+  <body bgcolor="B8DFF8">
+    <center>
+
+    <h2>선배가 나에게 와 아련하게 말을 건다</h2>
+    <h1>"혹시.. 카레맛 똥이 좋아요?<br>똥맛 카레가 좋아요?"</h1>
+    <img src="ft.jpg" width=500px;>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <p style="margin-top:50px;">
+    <button class='my_btn' style="padding:30px; margin:10px;" onclick="ft('f')";>심각하게 고민하며 뭐가 좋은지 생각해본다</button>
+    <br>
+    <button class='my_btn' style="padding:30px; margin:10px;"  onclick="ft('t')";>뭐지...(어이없는 눈으로) "네?"라고 되묻는다</button>
+    </p>
+
+    <br>
+    <br>
+    <p><spen>3<spen></p>
+    </center>
+
+  </body>
+
+  <script>
+  function ft(result){
+        if(result==='f'){
+          window.localStorage.setItem('ft', 'f');
+          location.href="5.html";
+        }
+        else if(result==='t'){
+          window.localStorage.setItem('ft', 't');
+          location.href="5.html";
+        }
+      }
+  </script>
+
+</html>
